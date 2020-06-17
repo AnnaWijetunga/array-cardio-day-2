@@ -66,13 +66,17 @@
     // Find the comment with this ID
     // delete the comment with the ID of 823423
     // returns you the first item it finds
-    const comment = comments.find(function(comment) {
-        if(commment.id === 823423) {
-            return true;
-        }
-    });
-    console.log(comment);
+    // const comment = comments.find(function(comment) {
+    //     if(commment.id === 823423) {
+    //         return true;
+    //     }
+    // });
+    // console.log(comment);
 
+    // arrow function
+    const comment = comments.find(comment => comment.id === 823423);
+
+    console.log(comment);
 
   </script>
 </body>
